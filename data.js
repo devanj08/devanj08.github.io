@@ -348,22 +348,108 @@ const siteData = {
   },
 
   // ===========================
+  // TIKTOK CREATOR
+  // ===========================
+  tiktok: {
+    username: "@yourhandle", // Update with your actual TikTok handle
+    profileUrl: "https://www.tiktok.com/@yourhandle", // Update with your actual TikTok profile URL
+
+    intro: {
+      title: "TikTok Creator",
+      subtitle: "Building communities through physics education and authentic storytelling",
+      description: `
+        <p>Leveraging deep understanding of platform algorithms and audience engagement to create educational content that resonates with hundreds of thousands across quantum mechanics, college admissions, and physics education.</p>
+      `
+    },
+
+    stats: {
+      views: "4.5M+",
+      likes: "300K+",
+      followers: "15K+"
+    },
+
+    contentModules: [
+      {
+        title: "Educational Impact & Audience Growth",
+        description: `
+          <p>Built educational content across quantum mechanics and college admissions that reached <strong>4.5M+ views, 300K+ likes, and 15K+ followers</strong> through understanding of platform algorithms and audience engagement.</p>
+
+          <p><strong>Content Strategy:</strong></p>
+          <ul>
+            <li>Developed content calendar focusing on quantum mechanics fundamentals and college admissions guidance</li>
+            <li>Analyzed TikTok algorithm patterns to optimize posting times, video length, and hook strategies</li>
+            <li>Built engaged community through consistent audience interaction and addressing viewer questions</li>
+            <li>Created educational series that balanced accessibility with scientific accuracy</li>
+          </ul>
+
+          <p><strong>Audience Engagement:</strong> Fostered authentic connections through responsive comment engagement, building a community of students, educators, and physics enthusiasts invested in STEM education.</p>
+        `,
+        imagePath: "assets/tiktok-educational.png" // Placeholder - add your screenshot
+      },
+      {
+        title: "Viral Success: Physics Education Philosophy",
+        description: `
+          <p>Created viral video explaining physics education philosophy that accumulated <strong>1.6M views and over 200K likes</strong>, resonating with hundreds of thousands through authentic storytelling about overcoming academic challenges.</p>
+
+          <p><strong>Content Highlights:</strong></p>
+          <ul>
+            <li>Shared personal journey through physics education, highlighting struggles and breakthroughs</li>
+            <li>Connected with viewers on emotional level by addressing common fears and misconceptions about physics</li>
+            <li>Demonstrated that authentic, vulnerable storytelling creates deeper engagement than purely instructional content</li>
+            <li>Video sparked conversations about making STEM education more accessible and inclusive</li>
+          </ul>
+
+          <p><strong>Impact:</strong> Comments revealed the video helped students reconsider their relationship with physics, with many expressing renewed confidence in pursuing STEM fields.</p>
+        `,
+        imagePath: "assets/tiktok-viral.png" // Placeholder - add your screenshot
+      },
+      {
+        title: "Platform Expertise & Content Production",
+        description: `
+          <p>Produced <strong>33 videos using TikTok's native editing tools</strong>, gaining first-hand experience with platform features, content workflows, and what makes short-form educational content succeed.</p>
+
+          <p><strong>Technical Skills:</strong></p>
+          <ul>
+            <li>Mastered TikTok's native video editor, effects library, and audio integration tools</li>
+            <li>Developed efficient filming and editing workflow optimized for mobile-first content creation</li>
+            <li>Experimented with trending formats, transitions, and visual effects to maximize engagement</li>
+            <li>Learned to convey complex physics concepts in 15-60 second formats through visual storytelling</li>
+          </ul>
+
+          <p><strong>Platform Understanding:</strong> Deep knowledge of what makes content succeed on TikTok: strong hooks in first 3 seconds, visual variety, strategic use of trending sounds, and authentic presenter energy.</p>
+        `,
+        imagePath: "assets/tiktok-production.png" // Placeholder - add your screenshot
+      }
+    ],
+
+    technologies: [
+      "TikTok Native Editing",
+      "Short-form Video",
+      "Educational Content",
+      "Audience Engagement",
+      "Platform Algorithms",
+      "Content Strategy",
+      "Visual Storytelling"
+    ]
+  },
+
+  // ===========================
   // CONTACT
   // ===========================
   contact: {
     email: "devanj@uchicago.edu",
     location: "Chicago, IL",
     socialLinks: [
-      { 
-        label: "LinkedIn", 
+      {
+        label: "LinkedIn",
         url: "https://www.linkedin.com/in/devan-johnson-116795254/"
       },
-      { 
-        label: "GitHub", 
+      {
+        label: "GitHub",
         url: "https://github.com/devanj08"
       },
-      { 
-        label: "Resume", 
+      {
+        label: "Resume",
         url: "files/Devan_Johnson_University_of_Chicago_2025_November.pdf"
       }
     ]

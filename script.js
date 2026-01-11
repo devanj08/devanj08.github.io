@@ -10,13 +10,14 @@ document.addEventListener('DOMContentLoaded', function() {
   renderCreche();
   renderUChicago();
   renderLeadership();
+  renderTikTok();
   renderContact();
-  
+
   // Initialize interactivity
   initNavigation();
   initMobileMenu();
   initVideoPlayers();
-  
+
   // Set current year
   document.getElementById('current-year').textContent = new Date().getFullYear();
 });
@@ -141,15 +142,63 @@ function renderLeadership() {
 }
 
 /**
+ * Render TikTok Section
+ */
+function renderTikTok() {
+  // Render intro
+  document.getElementById('tiktok-intro').innerHTML = siteData.tiktok.intro.description;
+
+  // Render stats
+  document.getElementById('tiktok-views').textContent = siteData.tiktok.stats.views;
+  document.getElementById('tiktok-likes').textContent = siteData.tiktok.stats.likes;
+  document.getElementById('tiktok-followers').textContent = siteData.tiktok.stats.followers;
+
+  // Render content modules
+  const modulesContainer = document.getElementById('tiktok-modules');
+  modulesContainer.innerHTML = siteData.tiktok.contentModules.map((module, index) => {
+    const isReverse = index % 2 === 1;
+    return `
+      <div class="project-module tiktok-module">
+        <div class="project-content-wrapper ${isReverse ? 'reverse' : ''}">
+          <div class="project-text">
+            <h3 class="project-title">${module.title}</h3>
+            <div class="project-description">${module.description}</div>
+          </div>
+          <div class="project-media">
+            <div class="image-placeholder">
+              <img src="${module.imagePath}" alt="${module.title}">
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Add technologies section after modules
+  const techSection = `
+    <div class="tiktok-tech-section">
+      <h3 class="tech-section-title">Skills & Expertise</h3>
+      <div class="project-tech">
+        ${siteData.tiktok.technologies.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
+      </div>
+    </div>
+  `;
+  modulesContainer.insertAdjacentHTML('beforeend', techSection);
+
+  // Set profile link
+  document.getElementById('tiktok-profile-link').href = siteData.tiktok.profileUrl;
+}
+
+/**
  * Render Contact Section
  */
 function renderContact() {
   const emailLink = document.getElementById('contact-email');
   emailLink.textContent = siteData.contact.email;
   emailLink.href = `mailto:${siteData.contact.email}`;
-  
+
   document.getElementById('contact-location').textContent = siteData.contact.location;
-  
+
   const socialLinks = document.getElementById('social-links');
   socialLinks.innerHTML = siteData.contact.socialLinks.map(link => `
     <a href="${link.url}" class="social-link" target="_blank" rel="noopener">${link.label}</a>
