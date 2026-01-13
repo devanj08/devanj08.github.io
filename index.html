@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devan Johnson - Portfolio</title>
+    <meta name="description" content="Physics and Data Science Portfolio - Argonne National Laboratory, Creche Innovations, University of Chicago">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">Devan Johnson</a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#argonne" class="nav-link">Argonne</a></li>
+                <li><a href="#creche" class="nav-link">Creche</a></li>
+                <li><a href="#uchicago" class="nav-link">UChicago</a></li>
+                <li><a href="#leadership" class="nav-link">Leadership</a></li>
+                <li><a href="#tiktok" class="nav-link">TikTok</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title" id="hero-name">Devan Johnson</h1>
+                <p class="hero-subtitle" id="hero-title">Physics & Data Science Specialist</p>
+                <p class="hero-tagline" id="hero-subtitle">Building intelligent systems at the intersection of physics, machine learning, and practical software engineering</p>
+                <div class="hero-cta">
+                    <a href="#argonne" class="btn btn-primary">View My Work</a>
+                    <a href="#" class="btn btn-secondary" id="cta-resume" download>Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Cards Section -->
+        <section id="experiences-overview" class="section experiences-overview">
+            <div class="container">
+                <h2 class="section-title">My Experience</h2>
+                <div class="experience-cards">
+                    <a href="#argonne" class="experience-card">
+                        <div class="leadership-icon">
+                            <img src="assets/argonne-national-lab-logo.png">
+                        </div>
+                        <h3>Argonne National Laboratory</h3>
+                        <p>Research Aide and Software Developer</p>
+                        <span class="experience-arrow">→</span>
+                    </a>
+                    <a href="#creche" class="experience-card">
+                        <div class="leadership-icon">
+                            <img src="assets/Creche_logo_Clean.png">
+                        </div>
+                        <h3>Creche Innovations</h3>
+                        <p>Operations and Efficiency Intern</p>
+                        <span class="experience-arrow">→</span>
+                    </a>
+                    <a href="#uchicago" class="experience-card">
+                        <div class="leadership-icon">
+                            <img src="assets/UChicago_Seal.png">
+                        </div>
+                        <h3>University of Chicago</h3>
+                        <p>Physics & Data Science</p>
+                        <span class="experience-arrow">→</span>
+                    </a>
+                    <a href="#tiktok" class="experience-card">
+                        <div class="leadership-icon">
+                            <img src="assets/Schrodinger_EQ.jpg" alt="TikTok">
+                        </div>
+                        <h3>TikTok Creator</h3>
+                        <p>Educational Content & Platform Strategy</p>
+                        <span class="experience-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Argonne National Laboratory Section -->
+        <section id="argonne" class="section experience-section argonne-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Argonne National Laboratory</h2>
+                    <p class="section-subtitle">Research Aide and Software Developer | June 2025 - Current</p>
+                </div>
+
+                <!-- NewsRadar Project -->
+                <div class="project-module" id="argonne-newsradar">
+                    <div class="certification-banner">
+                        <span class="cert-text">Video Coming Soon!</span>
+                    </div>
+                    <div class="project-content-wrapper">
+                        <div class="project-text">
+                            <h3 class="project-title">NewsRadar - Automated News Monitoring System</h3>
+                            <div class="project-description" id="newsradar-description"></div>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Web Scraping</span>
+                                <span class="tech-badge">LLM API Integration</span>
+                                <span class="tech-badge">SQL</span>
+                                <span class="tech-badge">FastAPI</span>
+                                <span class="tech-badge">Excel (openpyxl)</span>
+                                <span class="tech-badge">Secure Shell (SSH)</span>
+                            </div>
+                        </div>
+                        <div class="project-media">
+                            <!--<div class="video-player" data-video-id="newsradar-video">
+                                <div class="video-thumbnail">
+                                    <img src="assets/argonne/newsradar-thumb.jpg" alt="NewsRadar Demo">
+                                    <div class="play-button"></div>
+                                </div>
+                            </div> -->
+                            <div class="gif-placeholder" id="Radar_1">
+                                <img src="assets/Radar_1.png" alt="Radar_1">
+                            </div>
+                            <div class="gif-placeholder" id="Radar_2">
+                                <img src="assets/Radar_2.png" alt="Radar_2">
+                            </div>
+                            <div class="gif-placeholder" id="Radar_3">
+                                <img src="assets/Radar_3.png" alt="Radar_3">
+                            </div>
+                            <div class="gif-placeholder" id="Radar_4">
+                                <img src="assets/Radar_4.png" alt="Radar_4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Battery Risk Assessment -->
+                <div class="project-module" id="argonne-battery">
+                    <div class="project-content-wrapper reverse">
+                        <div class="project-text">
+                            <h3 class="project-title">Lithium-Ion Battery Supply Chain Risk Assessment Model</h3>
+                            <div class="project-description" id="battery-description"></div>
+                            <div class="project-tech">
+                                <span class="tech-badge">Risk Analysis</span>
+                                <span class="tech-badge">Data Modeling</span>
+                                <span class="tech-badge">UI Design</span>
+                            </div>
+                        </div>
+                        <div class="project-media">
+                            <div class="image-placeholder" id="battery-image">
+                                <img src="assets/Li_Battery_2.png" alt="Battery Risk Assessment">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming UAV Project -->
+                <div class="project-module upcoming" id="argonne-uav">
+                    <div class="certification-banner">
+                        <span class="cert-text">FAA sUAV Certified (Part 107)</span>
+                    </div>
+                    <div class="project-content-wrapper">
+                        <div class="project-text">
+                            <h3 class="project-title">UAV Artificial Intelligence Threat Analysis Model</h3>
+                            <span class="project-badge">Upcoming Project</span>
+                            <div class="project-description" id="uav-description"></div>
+                            <div class="project-tech">
+                                <span class="tech-badge">AI/ML</span>
+                                <span class="tech-badge">Computer Vision</span>
+                                <span class="tech-badge">Threat Detection</span>
+                                <span class="tech-badge">UAV Systems</span>
+                            </div>
+                        </div>
+                        <div class="project-media">
+                            <div class="image-placeholder" id="uav-image">
+                                <img src="assets/Drone_2.webp" alt="UAV AI Threat Analysis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creche Innovations Section -->
+        <section id="creche" class="section experience-section creche-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Creche Innovations</h2>
+                    <p class="section-subtitle">Software Development Intern | January 2024 - May 2024</p>
+                </div>
+
+                <div class="creche-projects" id="creche-projects">
+                    <!-- Projects will be dynamically inserted here -->
+                </div>
+                <!-- Recommendation Letters -->
+                <div class="recommendation-links">
+                    <a href="files/Scott_Norman_Rec_Letter.pdf" class="recommendation-btn" target="_blank" rel="noopener">
+                        Scott Norman (Former CEO) Recommendation Letter
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- University of Chicago Section -->
+        <section id="uchicago" class="section experience-section uchicago-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">University of Chicago</h2>
+                    <p class="section-subtitle">Bachelor of Science in Physics | Data Science Minor</p>
+                </div>
+
+                <!-- Physics Subsection -->
+                <div class="subsection" id="physics-subsection">
+                    <h3 class="subsection-title">Physics</h3>
+                    
+                    <!-- Gamma Cross Sections Lab -->
+                    <div class="project-module" id="physics-gamma">
+                        <div class="project-content-wrapper">
+                            <div class="project-text">
+                                <h4 class="project-title">Gamma-Ray Cross Sections Laboratory</h4>
+                                <div class="project-description" id="gamma-description"></div>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Gamma Spectroscopy</span>
+                                    <span class="tech-badge">Python Analysis</span>
+                                    <span class="tech-badge">Experimental Physics</span>
+                                    <span class="tech-badge">LaTeX</span>
+                                </div>
+                            </div>
+                            <div class="project-media">
+                                <div class="image-placeholder" id="gamma-image">
+                                    <img src="assets/Cs137_Attenuation_Plot_CORRECTED.png" alt="Gamma Ray Spectroscopy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Mathematics -->
+                    <div class="project-module" id="physics-math">
+                        <div class="project-content-wrapper reverse">
+                            <div class="project-text">
+                                <h4 class="project-title">Advanced Mathematical Physics</h4>
+                                <div class="project-description" id="math-description"></div>
+                                <div class="coursework-grid" id="physics-coursework">
+                                    <!-- Coursework will be dynamically inserted -->
+                                </div>
+                            </div>
+                            <div class="project-media">
+                                <div class="gif-placeholder" id="equations-pic">
+                                    <img src="assets/Equations.jpg" alt="Equations">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Science Subsection -->
+                <div class="subsection" id="datascience-subsection">
+                    <h3 class="subsection-title">Data Science</h3>
+                    
+                                        <!-- Swing Visualization -->
+                    <div class="project-module" id="ds-swing">
+                        <div class="project-content-wrapper reverse">
+                            <div class="project-text">
+                                <h4 class="project-title">Baseball Swing Biomechanics Using Computer Vision</h4>
+                                <div class="project-description" id="swing-description"></div>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Computer Vision & Deep Learning</span>
+                                    <span class="tech-badge">Custom Model Training (YOLOv8)</span>
+                                    <span class="tech-badge">Data Visualization (Matplotlib/Seaborn)</span>
+                                    <span class="tech-badge">Biomechanical Analysis & Time-Series Processing</span>
+                                </div>
+                                <!-- Recommendation Letters -->
+                                <div class="recommendation-links">
+                                    <a href="files/David Biron Reccomendation Letter McMaster-Carr.pdf" class="recommendation-btn" target="_blank" rel="noopener">
+                                        Dr. David Biron Recommendation Letter
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-media">
+                                <div class="gif-placeholder" id="swing-pic">
+                                    <img src="assets/Bregman_bat_pose_debug.gif" alt="Swing Visualization Demo">
+                                </div>
+                                <div class="gif-placeholder" id="swing-pic2">
+                                    <img src="assets/Stanton_annotated_video.gif" alt="Swing Visualization Demo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- NBA Analysis -->
+                    <div class="project-module" id="ds-nba">
+                        <div class="project-content-wrapper">
+                            <div class="project-text">
+                                <h4 class="project-title">NBA Salary Prediction Analysis</h4>
+                                <div class="project-description" id="nba-description"></div>
+                                <div class="project-tech">
+                                    <span class="tech-badge">Python</span>
+                                    <span class="tech-badge">Scikit-learn</span>
+                                    <span class="tech-badge">Regression Analysis</span>
+                                </div>
+                            </div>
+                            <div class="project-media">
+                                <div class="image-placeholder" id="nba-image">
+                                    <img src="assets/NBA_Slaries.jpg" alt="NBA Analysis">
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership & Athletics Section -->
+        <section id="leadership" class="section leadership-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Leadership & Athletics</h2>
+                </div>
+
+                <div class="leadership-grid">
+                    <!-- Fraternity Leadership -->
+                    <div class="leadership-card fraternity-card">
+                        <div class="leadership-icon">
+                            <img src="assets/PsiULogo.jpg">
+                        </div>
+                        <h3>Psi Upsilon Omega Fraternity</h3>
+                        <p class="leadership-subtitle">Leadership in Multiple Executive Positions</p>
+                        
+                        <div class="leadership-roles" id="fraternity-roles">
+                            <!-- Roles will be dynamically inserted -->
+                        </div>
+                        
+                        <div class="leadership-description" id="fraternity-description"></div>
+                    </div>
+
+                    <!-- Baseball -->
+                    <div class="leadership-card baseball-card">
+                        <div class="leadership-icon">
+                            <img src="assets/NCAA-Logo-PNG.png">
+                        </div>
+                        <h3>Division III Varsity Baseball</h3>
+                        <p class="leadership-subtitle">UChicago Maroons</p>
+                        
+                        <div class="baseball-achievements" id="baseball-achievements">
+                            <!-- Achievements will be dynamically inserted -->
+                        </div>
+                        
+                        <div class="certifications" id="baseball-certifications">
+                            <!-- Certifications will be dynamically inserted -->
+                        </div>
+                        
+                        <div class="leadership-description" id="baseball-description"></div>
+                        
+                        <!-- Recommendation Letters -->
+                        <div class="recommendation-links">
+                            <a href="files/Kevin_Tyrrell_Rec_Letter.pdf" class="recommendation-btn" target="_blank" rel="noopener">
+                                Kevin Tyrrell (UChicago Head Baseball Coach) Recommendation Letter
+                            </a>
+                            <a href="files/Ray Recommendation Letter.pdf" class="recommendation-btn" target="_blank" rel="noopener">
+                                Ray Birmingham (Former UNM Baseball Coach) Recommendation Letter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TikTok Creator Section -->
+        <section id="tiktok" class="section experience-section tiktok-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="tiktok-title">TikTok Creator</h2>
+                    <p class="section-subtitle" id="tiktok-subtitle">August 2025 - Current</p>
+                </div>
+
+                <!-- Stats Banner -->
+                <div class="tiktok-stats-banner">
+                    <div class="stat-item">
+                        <div class="stat-number" id="tiktok-views">4.5M+</div>
+                        <div class="stat-label">Views</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="tiktok-likes">300K+</div>
+                        <div class="stat-label">Likes</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="tiktok-followers">15K+</div>
+                        <div class="stat-label">Followers</div>
+                    </div>
+                </div>
+
+                <!-- Content Modules -->
+                <div id="tiktok-modules">
+                    <!-- Modules will be dynamically inserted -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <p class="contact-email">
+                            <strong>Email:</strong> <a href="#" id="contact-email"></a>
+                        </p>
+                        <p class="contact-location">
+                            <strong>Location:</strong> <span id="contact-location"></span>
+                        </p>
+                    </div>
+                    <div class="social-links" id="social-links"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Devan Johnson. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h3 id="modal-title"></h3>
+            </div>
+            <div class="modal-body">
+                <div class="video-container" id="modal-video-container"></div>
+                <div class="modal-details">
+                    <p class="modal-description" id="modal-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
