@@ -35,7 +35,7 @@ const siteData = {
         
         <p><strong>Key Results & Impact:</strong></p>
         <ul>
-          <li><strong>Production stability:</strong> Analysts have been able to move completely away from manual article searching, solely relying on the databases produced by NewsRadar.</li>
+          <li><strong>Production stability:</strong> Analysts have been able to eliminate manual article searching, solely relying on the databases produced by NewsRadar.</li>
           <li><strong>15+ hours/week saved per analyst:</strong> Reduced manual monitoring from 3-4 hours daily to 45 minutes.</li>
           <li><strong>95% relevance accuracy:</strong> Automated filtering produces higher quality results than manual identification while processing thousands of articles.</li>
           <li><strong>Lowered technical barriers:</strong> AI assistant enables non-technical analysts to configure complex multilingual searches without coding.</li>
@@ -365,8 +365,8 @@ const siteData = {
               <p class="comment-author">— Zerotrace</p>
             </div>
             <div class="comment-item">
-              <p class="comment-text">"Such an important message my guy"</p>
-              <p class="comment-author">— Thomas Sidlinger</p>
+              <p class="comment-text">"Well said! As a physicist-I still struggle. On the other hand, the ability to remain persistent at problems is exciting and teaches discipline."</p>
+              <p class="comment-author">— jstepup</p>
             </div>
           </div>
 
