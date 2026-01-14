@@ -26,7 +26,7 @@ const siteData = {
         
         <p><strong>What I Built:</strong></p>
         <ul>
-          <li>Built web scraping framework gathering and translating news articles from 76 countries in 39 languages using custom keyword dictionaries.</li>
+          <li>Built web scraping framework gathering and translating news articles from 43 countries in 40 languages using custom keyword dictionaries.</li>
           <li>Integrated Argonne's internal LLM with engineered prompts to automatically categorize and score article relevance.</li>
           <li>Developed front-end interface allowing analysts to customize search parameters, view real-time scraping progress, and download results.</li>
           <li>Created AI chatbot assistant that helps analysts generate optimized prompts and multilingual keyword dictionaries through conversational interface.</li>
@@ -41,10 +41,10 @@ const siteData = {
           <li><strong>Lowered technical barriers:</strong> AI assistant enables non-technical analysts to configure complex multilingual searches without coding.</li>
         </ul>
       `,
-      imagePath: "assets/NewsRadar.png"
-      //videoType: "youtube", // "youtube", "vimeo", or "file"
-      //videoUrl: "https://www.youtube.com/embed/YOUR_VIDEO_ID", // Replace with your actual video
-      //thumbnailPath: "assets/argonne/newsradar-thumb.jpg"
+      //imagePath: "assets/NewsRadar.png"
+      videoType: "youtube",
+      videoUrl: "https://www.youtube.com/watch?v=8qHb0GfKzyU", // Replace with your actual video
+      thumbnailPath: "assets/NewsRadar_Thumbnail.png"
     },
 
     // Battery Risk Assessment
