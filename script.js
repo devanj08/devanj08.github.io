@@ -336,15 +336,21 @@ function openVideoModal(videoData) {
     // Handle standard YouTube watch URLs (youtube.com/watch?v=VIDEO_ID)
     if (embedUrl.includes('youtube.com/watch?v=')) {
       const videoId = embedUrl.split('v=')[1].split('&')[0];
-      embedUrl = `https://www.youtube.com/embed/${videoId}`;
+      embedUrl = `https://www.youtube.com/embed/${videoId}?enablejsapi=1`;
     }
     // Handle shortened YouTube URLs (youtu.be/VIDEO_ID)
     else if (embedUrl.includes('youtu.be/')) {
       const videoId = embedUrl.split('youtu.be/')[1].split('?')[0];
-      embedUrl = `https://www.youtube.com/embed/${videoId}`;
+      embedUrl = `https://www.youtube.com/embed/${videoId}?enablejsapi=1`;
     }
 
-    videoHTML = `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
+    videoHTML = `<iframe
+      src="${embedUrl}"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"
+    ></iframe>`;
   } else if (videoData.videoType === 'vimeo') {
     videoHTML = `<iframe src="${videoData.videoUrl}" allowfullscreen></iframe>`;
   } else if (videoData.videoType === 'file') {
