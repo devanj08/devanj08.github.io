@@ -328,8 +328,24 @@ function openVideoModal(videoData) {
   // Set video
   const videoContainer = document.getElementById('modal-video-container');
   let videoHTML = '';
-  
-  if (videoData.videoType === 'youtube' || videoData.videoType === 'vimeo') {
+
+  if (videoData.videoType === 'youtube') {
+    // Convert YouTube watch URL to embed URL
+    let embedUrl = videoData.videoUrl;
+
+    // Handle standard YouTube watch URLs (youtube.com/watch?v=VIDEO_ID)
+    if (embedUrl.includes('youtube.com/watch?v=')) {
+      const videoId = embedUrl.split('v=')[1].split('&')[0];
+      embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    }
+    // Handle shortened YouTube URLs (youtu.be/VIDEO_ID)
+    else if (embedUrl.includes('youtu.be/')) {
+      const videoId = embedUrl.split('youtu.be/')[1].split('?')[0];
+      embedUrl = `https://www.youtube.com/embed/${videoId}`;
+    }
+
+    videoHTML = `<iframe src="${embedUrl}" allowfullscreen></iframe>`;
+  } else if (videoData.videoType === 'vimeo') {
     videoHTML = `<iframe src="${videoData.videoUrl}" allowfullscreen></iframe>`;
   } else if (videoData.videoType === 'file') {
     videoHTML = `<video src="${videoData.videoUrl}" controls></video>`;
